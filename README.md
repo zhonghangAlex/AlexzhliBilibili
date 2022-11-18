@@ -1,3 +1,9 @@
+## 0. Introduction
+1. 一个基于Spring Boot、MySQL、Redis、RocketMQ、ES的高可用仿Bilibili项目后端；
+2. 通用功能：数据加解密、安全验证、跨域处理、热部署、Json处理；
+3. 用户服务：用户注册和登录、忘记和修改密码、项目权限分配、用户即时通讯、消息、订阅、关注；
+4. 核心功能：视频上传和下载、视频轮播和异步加载、视频分享、点赞、投币、分片、评论、大规模弹幕实时加载、观看记录同步、弹幕遮罩、智能推荐模块、全局搜索；
+
 ## 1. Development env project start up
 1. maven install
 2. mysql install and configuration
