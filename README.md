@@ -44,7 +44,7 @@ you should set auto create topic param to `true` at `rockmq bin`
 ## 2. Notice
 1. Password `123456` convert to encrypted version is `H51gEporH5vQNHeZV+8lGBhkuIac+jQeLBKDJHyfmdoGY3yv2Gjh/yTQJKy7FrwBigauQM945DUS+896oZOBzoXf6PWMVW/6T5S9oB8vYCborJ81FNr3ihJYGBybZDGa+ZMFRvbzeWHXzhrLKab7+czhxRNKlw0Irz6Bf7v1MBo=`
 2. Access control `RBAC` : `RBAC0`, `RBAC1`, `RBAC2`, `RBAC3`, includes user, power, resources, role, operation
-![img.png](public/access_control_table.png)
+![img.png](https://typora-1256091168.cos.ap-nanjing.myqcloud.com/docPic/202211190250585.png)
 
 ## 3. Tools
 ### 3.1 MQ
@@ -63,7 +63,7 @@ FastDFS的两个角色分为跟踪服务器（tracker）和存储服务器（sto
 
 存储服务器：主要提供容量和备份服务，存储服务器是以组（group）为单位，每个组内可以有多台存储服务器，数据互为备份。文件及属性（meta data）都保存在该服务器上。
 
-![img.png](public/FastDFS.png)
+![img.png](https://typora-1256091168.cos.ap-nanjing.myqcloud.com/docPic/202211190250259.png)
 
 ### 3.4 Nginx
 > Nginx是反向代理服务器，代理其实就是中间人，客户端通过代理发送七扭去到互联网上的服务器，从而获取想要的资源。
@@ -75,12 +75,12 @@ Pros:
 4. 稳定性高。
 
 - 正向代理的特点：服务端不知道客户端、客户端知道代理端；
-- ![img.png](public/proxy1.png)
+- ![img.png](https://typora-1256091168.cos.ap-nanjing.myqcloud.com/docPic/202211190251834.png)
 - 反向代理的特点：服务端知道客户端、客户端不知道代理端；
-- ![img.png](public/proxy2.png)
+- ![img.png](https://typora-1256091168.cos.ap-nanjing.myqcloud.com/docPic/202211190251776.png)
 
 ### 3.5 FastDFS + Nginx结合实现文件资源HTTP访问
-![img.png](public/FastDFS2.png)
+![img.png](https://typora-1256091168.cos.ap-nanjing.myqcloud.com/docPic/202211190251677.png)
 
 ### 3.6 Mahout协同过滤实现内容推荐
 > Mahout是一个开源的分布式机器学习算法的算法库，它是一个基于Java实现的可扩展的、高效的推荐引擎

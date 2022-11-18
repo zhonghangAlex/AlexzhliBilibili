@@ -8,9 +8,11 @@ import org.springframework.boot.autoconfigure.http.HttpMessageConverters;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
+import org.springframework.http.MediaType;
 import sun.awt.geom.AreaOp;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 // 注解：在sring-boot中用来标识是内部配置文件的，这个注释会将这个配置自动加载到上下文中使其生效
@@ -59,6 +61,8 @@ public class JsonHttpMessageConverterConfig {
         );
         // 给fast-json实例传入配置
         fastConverter.setFastJsonConfig(fastJsonConfig);
+        // 如果使用feign进行微服务间的接口条用，则需要加上该配置
+        fastConverter.setSupportedMediaTypes(Collections.singletonList(MediaType.APPLICATION_JSON));
         return new HttpMessageConverters(fastConverter);
     }
 }
